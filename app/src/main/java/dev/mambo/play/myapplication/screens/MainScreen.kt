@@ -28,7 +28,7 @@ object MainScreen : Screen {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreenContent(navigate: (Screen) -> Unit) {
-    val list by remember { mutableStateOf(listOf(MainItem(name = "Form", screen = FormFieldScreen))) }
+    val list by remember { mutableStateOf(listOf(MainItem(name = "Form Focus", screen = FormFieldScreen))) }
     Scaffold(topBar = {
         TopAppBar(title = { Text(text = "Playground") })
     }) { paddingValues ->
